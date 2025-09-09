@@ -6,5 +6,6 @@
   - Define a route to the controller method
   - Passing route data to controller
   - How to create migration for database and add a new column to existing table
-  - How to Rollback Migrations and Undo Changes
+  - How to Running and Rollback Migrations and Undo Changes
+
 
