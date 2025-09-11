@@ -8,5 +8,8 @@
 
 
 <x-layout>
-    <h1>This is hello from home page</h1>
+    <x-slot:title>
+        Home
+    </x-slot:title>
+    <p>This is hello from home page</p>
 </x-layout>

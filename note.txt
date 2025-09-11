@@ -6,3 +6,9 @@
 		. we use the make:controller Artisan command's --resource to handle
 		  create, read, update, and delete ("CRUD")
 	-
+3. migration
+	- php artisan make:migration create_students_table
+	- php artisan migrate
+4. to create model
+	- php artisan make:model Student
+	- php artisan make:model Student -mc (this create model and controller)

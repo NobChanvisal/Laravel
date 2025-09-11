@@ -1,18 +1,12 @@
 
 <x-layout>
-    {{-- <div style=" padding: 20px;">
-        <h1>Welcome back {{$thisUser['name']}}</h1>
-        <p>{{$thisUser['email']}}</p>
-    </div> --}}
+    <x-slot:title>
+        Userlist
+    </x-slot:title>
+   <div style="padding: 20px; display: flex; gap: 10px">
+        @foreach ($Users as $user)
+            <x-usercard :user="$user"/>
+        @endforeach
+   </div>
 
-    @foreach ($Users as $user)
-    
-        <p> 
-            <a href="/user/{{ $user['id'] }}">
-                {{ $user['name'] }} ({{ $user['role'] }})
-            </a> 
-        </p>
-            
-       
-    @endforeach
 </x-layout>

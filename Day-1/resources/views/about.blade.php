@@ -6,6 +6,9 @@
     </nav> --}}
 
 <x-layout>
+    <x-slot:title>
+        About
+    </x-slot:title>
     <h1>This is about page</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
 </x-layout>

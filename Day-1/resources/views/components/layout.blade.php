@@ -32,6 +32,14 @@
         nav a.active {
             background-color: #47617d;
         }
+        main{
+            padding: 10px;
+        }
+        footer{
+            margin-top: 10px;
+            text-align: center;
+            
+        }
     </style>
 </head>
 <body>
@@ -45,7 +53,12 @@
                 <a class="{{request()->is('contact')? 'active':''}}" href="/contact">Contact</a>
             </nav>
         </header>
-
-    {{ $slot }}
+        <main >
+            <h1>{{$title}}</h1>
+             {{ $slot }}
+        </main>
+        <footer>
+            <h2>this is your foot</h2>
+        </footer>
 </body>
 </html>
