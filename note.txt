@@ -9,6 +9,7 @@
 3. migration
 	- php artisan make:migration create_students_table
 	- php artisan migrate
+	- php artisan migrate --path=database/migrations/YYYY_MM_DD_HHMMSS_create_your_table.php
 4. to create model
 	- php artisan make:model Student
 	- php artisan make:model Student -mc (this create model and controller)
