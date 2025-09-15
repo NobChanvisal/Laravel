@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\CourseController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +21,4 @@ Route::controller(TeacherController::class)->group(function () {
     Route::delete('/teachers/{id}', 'destroy')->name('teachers.destroy');
 });
 // Route::resource('teachers', TeacherController::class);
+Route::resource('courses', CourseController::class);
