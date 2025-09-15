@@ -1,5 +1,5 @@
 1. create laravel project.
-	create laravel-project laravel/laravel project-name
+	composer create-project laravel/laravel project-name
 2. to create controller.
 	- php artisan make:controller ControllerName
 	- php artisan make:controller ControllerName --resource
@@ -9,7 +9,7 @@
 3. migration
 	- php artisan make:migration create_students_table
 	- php artisan migrate
-	- php artisan migrate --path=database/migrations/YYYY_MM_DD_HHMMSS_create_your_table.php
+	- php artisan migrate --path=database/migrations/YYYY_MM_DD_HHMMSS_create_your_table.php (for run specific)
 4. to create model
 	- php artisan make:model Student
 	- php artisan make:model Student -mc (this create model and controller)
